@@ -1,0 +1,35 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   
+    tools:context="com.zyb.example.ui.MainActivity" 
+    tools:ignore="MergeRootFrame">
+    <!-- Frame 1 -->
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/index_background"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        
+        >
+        <!-- Top bar -->
+        
+        <include layout="@layout/top_bar"></include>
+        
+        <!-- 唱片 -->
+        <include layout="@layout/pan_layout"></include>
+        
+        <!-- 文字框 -->
+        <include layout="@layout/name_selector"></include> 
+        
+        
+        </LinearLayout>
+             <!-- 浮动按钮 -->
+             <include layout="@layout/float_buttons"></include>"
+         <!-- 答案正确界面 -->
+    <include layout="@layout/answer_right"></include>
+   
+</FrameLayout>
